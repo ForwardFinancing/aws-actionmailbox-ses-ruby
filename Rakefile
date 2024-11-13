@@ -23,5 +23,5 @@ task :db_migrate_reset do
   end
 end
 
-task test: [:sign_aws_fixtures, :db_migrate_reset, :spec]
+task test: %i[sign_aws_fixtures db_migrate_reset spec]
 task 'release:test' => :test

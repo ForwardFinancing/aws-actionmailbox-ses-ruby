@@ -45,6 +45,14 @@ jobs:
             ruby: 3.1
           - rails: main
             ruby: jruby-9.4
+          # sqlite3 doesn't exist for jruby rails 7.2+
+          # Contains some duplicate matrix entry
+          - rails: 7.2
+            ruby: jruby-9.4
+          - rails: '8.0'
+            ruby: jruby-9.4
+          - rails: main
+            ruby: jruby-9.4
 
     steps:
       - uses: actions/checkout@v4

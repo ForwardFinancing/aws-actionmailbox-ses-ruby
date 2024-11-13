@@ -2,6 +2,9 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 2.7
   SuggestExtensions: false
+  Exclude:
+    - 'spec/dummy/db/schema.rb'
+    - 'spec/dummy/db/migrate/*.rb'
 
 Gemspec/RequireMFA:
   Enabled: false

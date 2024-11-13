@@ -12,7 +12,7 @@ module Dummy
     config.eager_load = true
     config.secret_key_base = 'secret'
 
-    config.active_storage.service = :test
+    config.active_storage.service = :local
     config.action_mailbox.ingress = :ses
     config.action_mailbox.ses.subscribed_topic = 'arn:aws:sns:us-west-2:012345678910:example-topic'
   end
