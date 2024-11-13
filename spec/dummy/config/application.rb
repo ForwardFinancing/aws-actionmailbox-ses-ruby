@@ -2,6 +2,7 @@
 
 require 'rails'
 require 'action_mailbox/engine'
+require 'activerecord-jdbc-adapter' if defined? JRUBY_VERSION
 
 require 'aws-actionmailbox-ses'
 
