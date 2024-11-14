@@ -1,0 +1,12 @@
+{
+  "Type": "SubscriptionConfirmation",
+  "MessageId": "abc12345-abc1-abc1-abc1-abc123456789",
+  "Token": "abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1",
+  "TopicArn": "arn:aws:sns:us-west-2:012345678910:unrecognized-topic",
+  "Message": "You have chosen to subscribe to the topic arn:aws:sns:us-west-2:012345678910:unrecognized-topic. To confirm the subscription, visit the SubscribeURL included in this message.",
+  "SubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-west-2:012345678910:unrecognized-topic&Token=abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234",
+  "Timestamp": "2020-05-07T07:25:25.364Z",
+  "SignatureVersion": "1",
+  "Signature": "YC7gM1y+N4N4ckWZYFL6u9NkNGG8S+TEJQDbccauPrEfQgp3s85I2t7nAB/L\ncqUZMe6l//W2OdATfLyQhGTSIialmBjvulqRJZMuy9WorZuS+pDlx3hHRykt\n4+UWC2HjV4g138LSrWDYKvrR+LxKmvoy1/AqyxV+ZxUETYp4/oDHBckrRAw+\nRgKo2ipnTH13H/VpSJmqsOJMYI/6wPMKM5gB4qtJloY8SLq+8sBpfE9LEBw5\n0sLgofCiFATeIDP986viBWLr+ui/lVy8fITANIJ4OGKoRQUahpx08eQq8h2/\nB6S5MhuBjdcmb+6+cK8mDxc1kaWu17k5cPEsmM7vFQ==\n",
+  "SigningCertURL": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d737128f7b6.pem"
+}

@@ -1,0 +1,23 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  SuggestExtensions: false
+  Exclude:
+    - 'spec/dummy/db/schema.rb'
+    - 'spec/dummy/db/migrate/*.rb'
+
+Gemspec/RequireMFA:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Naming/FileName:
+  Exclude:
+    - 'gemfiles/*.gemfile'
+    - 'lib/aws-actionmailbox-ses.rb'
+
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'

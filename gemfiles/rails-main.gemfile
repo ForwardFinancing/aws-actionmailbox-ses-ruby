@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+eval_gemfile '../Gemfile'
+
+gem 'rails', github: 'rails/rails'
+
+group :test do
+  gem 'sqlite3', platform: :ruby
+end
