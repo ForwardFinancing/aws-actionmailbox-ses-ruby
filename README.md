@@ -50,7 +50,7 @@ https://example.com/rails/action_mailbox/ses/inbound_emails
 
 1. Configure _ActionMailbox_ to accept emails from Amazon SES:
 
-    ```
+    ```ruby
     # config/environments/production.rb
     config.action_mailbox.ingress = :ses
     ```
@@ -60,7 +60,7 @@ https://example.com/rails/action_mailbox/ses/inbound_emails
     Note: The bucket's region, which stores the emails, does not need to match
     the SNS topic's region.
     
-    ```
+    ```ruby
     # config/environments/production.rb
     config.action_mailbox.ses.subscribed_topic = 'arn:aws:sns:us-west-2:012345678910:example-topic-1'
     config.action_mailbox.ses.s3_client_options = { region: 'us-east-1' }

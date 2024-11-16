@@ -3,6 +3,7 @@ AllCops:
   TargetRubyVersion: 2.7
   SuggestExtensions: false
   Exclude:
+    - 'tasks/release/**/*'
     - 'spec/dummy/db/schema.rb'
     - 'spec/dummy/db/migrate/*.rb'
 

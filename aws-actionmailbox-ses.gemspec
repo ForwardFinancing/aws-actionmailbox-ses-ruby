@@ -13,11 +13,11 @@ Gem::Specification.new do |spec|
   spec.license      = 'Apache-2.0'
   spec.files        = Dir['LICENSE', 'CHANGELOG.md', 'VERSION', 'lib/**/*', 'app/**/*', 'config/*']
 
-  spec.add_dependency('actionmailbox', '>= 7.1.0')
-
   # Require these versions for user_agent_framework configs
   spec.add_dependency('aws-sdk-s3', '~> 1', '>= 1.123.0')
   spec.add_dependency('aws-sdk-sns', '~> 1', '>= 1.61.0')
+
+  spec.add_dependency('actionmailbox', '>= 7.1.0')
 
   spec.required_ruby_version = '>= 2.7'
 end
