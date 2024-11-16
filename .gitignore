@@ -10,6 +10,7 @@ doc/
 docs.zip
 .release/
 
+spec/dummy/db/schema.rb
 spec/dummy/log/
 spec/dummy/tmp/
 spec/dummy/storage/
