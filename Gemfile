@@ -29,9 +29,9 @@ end
 
 case RUBY_VERSION
 when /2.7.\d+/
-  gem 'sqlite3', '~> 1.6', platform: :ruby
+  gem 'sqlite3', '~> 1.6.0', platform: :ruby
 when /3.0.\d+/
-  gem 'sqlite3', '~> 1.7', platform: :ruby
+  gem 'sqlite3', '~> 1.7.0', platform: :ruby
 else
   gem 'sqlite3', platform: :ruby
 end
