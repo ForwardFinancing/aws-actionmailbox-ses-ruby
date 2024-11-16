@@ -19,15 +19,20 @@ when '7.1'
       git: 'https://github.com/jruby/activerecord-jdbc-adapter',
       glob: 'activerecord-jdbcsqlite3-adapter/activerecord-jdbcsqlite3-adapter.gemspec'
   gem 'rails', '~> 7.1'
-  gem 'sqlite3', platform: :ruby
 when '7.2'
   gem 'rails', '~> 7.0'
-  gem 'sqlite3', platform: :ruby
 when '8.0'
   gem 'rails', '~> 8.0'
-  gem 'sqlite3', platform: :ruby
 else
   gem 'rails', github: 'rails/rails'
+end
+
+case RUBY_VERSION
+when /2.7.\d+/
+  gem 'sqlite3', '~> 1.6', platform: :ruby
+when /3.0.\d+/
+  gem 'sqlite3', '~> 1.7', platform: :ruby
+else
   gem 'sqlite3', platform: :ruby
 end
 
