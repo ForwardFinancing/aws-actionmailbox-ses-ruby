@@ -6,24 +6,21 @@ require_relative 'rspec/subscription_confirmation'
 module Aws
   module ActionMailbox
     module SES
-      # Include the `Aws::ActionMailbox::SES::RSpec` extension in your tests, like so:
-      # require 'aws/rails/action_mailbox/rspec'
-      # RSpec.configure do |config|
-      #   config.include Aws::ActionMailbox::SES::RSpec
-      # end
-      # Then, in a request spec, use like so:
-      # RSpec.describe 'amazon emails', type: :request do
-      #   it 'delivers a subscription notification' do
-      #     action_mailbox_ses_deliver_subscription_confirmation
-      #     expect(response).to have_http_status :ok
-      #   end
-
-      #   it 'delivers an email notification' do
-      #     action_mailbox_ses_deliver_email(mail: Mail.new(to: 'user@example.com'))
-      #     expect(ActionMailbox::InboundEmail.last.mail.recipients).to eql ['user@example.com']
-      #   end
-      # end
+      # RSpec extension for testing Amazon SES notifications. Include the
+      # `Aws::ActionMailbox::SES::RSpec` extension in your tests, like so:
+      #
+      #     require 'aws/rails/action_mailbox/rspec'
+      #     RSpec.configure do |config|
+      #       config.include Aws::ActionMailbox::SES::RSpec
+      #     end
+      #
       module RSpec
+        # Stubs the AWS SNS message verifier and delivers a subscription confirmation.
+        # @example
+        #   it 'delivers a subscription notification' do
+        #     action_mailbox_ses_deliver_subscription_confirmation
+        #     expect(response).to have_http_status :ok
+        #   end
         def action_mailbox_ses_deliver_subscription_confirmation(options = {})
           subscription_confirmation = SubscriptionConfirmation.new(**options)
           stub_aws_sns_message_verifier(subscription_confirmation)
@@ -35,6 +32,12 @@ module Aws
                as: :json
         end
 
+        # Stubs the AWS SNS message verifier and delivers an email.
+        # @example
+        #   it 'delivers an email notification' do
+        #     action_mailbox_ses_deliver_email(mail: Mail.new(to: 'user@example.com'))
+        #     expect(ActionMailbox::InboundEmail.last.mail.recipients).to eql ['user@example.com']
+        #   end
         def action_mailbox_ses_deliver_email(options = {})
           email = Email.new(**options)
           stub_aws_sns_message_verifier(email)

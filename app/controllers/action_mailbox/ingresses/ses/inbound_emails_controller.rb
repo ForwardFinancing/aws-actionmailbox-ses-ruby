@@ -6,6 +6,7 @@ module ActionMailbox
       # Ingests inbound emails from Amazon SES/SNS and confirms subscriptions.
       #
       # Subscription requests must provide the following parameters in a JSON body:
+      #
       # - +Message+: Notification content
       # - +MessageId+: Notification unique identifier
       # - +Timestamp+: iso8601 timestamp
@@ -13,6 +14,7 @@ module ActionMailbox
       # - +Type+: Type of event ("Subscription")
       #
       # Inbound email events must provide the following parameters in a JSON body:
+      #
       # - +Message+: Notification content
       # - +MessageId+: Notification unique identifier
       # - +Timestamp+: iso8601 timestamp

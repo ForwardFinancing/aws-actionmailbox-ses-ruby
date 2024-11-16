@@ -2,6 +2,9 @@
 Gemfile.lock
 gemfiles/*.gemfile.lock
 
+.yardoc/
+doc/
+
 spec/dummy/log/
 spec/dummy/tmp/
 spec/dummy/storage/
