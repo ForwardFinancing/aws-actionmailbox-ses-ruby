@@ -18,11 +18,11 @@ when '7.1'
       # this is not published for some reason
       git: 'https://github.com/jruby/activerecord-jdbc-adapter',
       glob: 'activerecord-jdbcsqlite3-adapter/activerecord-jdbcsqlite3-adapter.gemspec'
-  gem 'rails', '~> 7.1'
+  gem 'rails', '~> 7.1.0'
 when '7.2'
-  gem 'rails', '~> 7.0'
+  gem 'rails', '~> 7.2.0'
 when '8.0'
-  gem 'rails', '~> 8.0'
+  gem 'rails', '~> 8.0.0'
 else
   gem 'rails', github: 'rails/rails'
 end
