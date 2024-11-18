@@ -1,6 +1,6 @@
 ## Amazon Simple Email Service (SES) as an ActionMailbox Ingress
 
-[![Gem Version](https://badge.fury.io/rb/aws-actionmailbox-ses-ruby.svg)](https://badge.fury.io/rb/aws-actionmailbox-ses-ruby)
+[![Gem Version](https://badge.fury.io/rb/aws-actionmailbox-ses.svg)](https://badge.fury.io/rb/aws-actionmailbox-ses)
 [![Build Status](https://github.com/aws/aws-actionmailbox-ses-ruby/workflows/CI/badge.svg)](https://github.com/aws/aws-actionmailbox-ses-ruby/actions)
 [![Github forks](https://img.shields.io/github/forks/aws/aws-actionmailbox-ses-ruby.svg)](https://github.com/aws/aws-actionmailbox-ses-ruby/network)
 [![Github stars](https://img.shields.io/github/stars/aws/aws-actionmailbox-ses-ruby.svg)](https://github.com/aws/aws-actionmailbox-ses-ruby/stargazers)
