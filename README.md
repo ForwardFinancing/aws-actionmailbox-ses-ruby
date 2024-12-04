@@ -13,7 +13,7 @@ ingress using Amazon SES, SNS, and S3.
 Add this gem to your Rails project's Gemfile:
 
 ```ruby
-gem 'aws-sdk-rails', '~> 4'
+gem 'aws-sdk-rails', '~> 5'
 gem 'aws-actionmailbox-ses', '~> 0'
 ```
 
