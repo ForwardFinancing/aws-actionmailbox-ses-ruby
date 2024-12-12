@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency('aws-sdk-s3', '~> 1', '>= 1.123.0')
   spec.add_dependency('aws-sdk-sns', '~> 1', '>= 1.61.0')
 
-  spec.add_dependency('actionmailbox', '>= 7.1.0')
+  spec.add_dependency('actionmailbox', '~> 7.0')
 
   spec.required_ruby_version = '>= 2.7'
 end
